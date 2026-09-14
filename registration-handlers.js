@@ -43,7 +43,7 @@ const P5_COMBINED_RE = /^(.+?)\s*-\s*([0-9]{5,12})$/;
 // and by the admin panel's "Post Registration Panel" button.
 function buildRegistrationPanelPayload() {
   const embed = new EmbedBuilder()
-    .setTitle('📋 T3 SCRIMS REGISTRATION')
+    .setTitle('<:4321bgmi:1547674231498612837> T3 SCRIMS REGISTRATION')
     .setColor(0xF5A623)
     .setDescription(
       'Ready to enter the lobby? Register your squad and lock your spot before the slots run out!\n\n' +
@@ -61,12 +61,12 @@ function buildRegistrationPanelPayload() {
     new ButtonBuilder()
       .setCustomId('t3reg_start')
       .setLabel('Register')
-      .setEmoji('✅')
+      .setEmoji('<a:452028tick:1547663744979574955>')
       .setStyle(ButtonStyle.Success),
     new ButtonBuilder()
       .setCustomId('t3reg_edit_start')
       .setLabel('Edit')
-      .setEmoji('✏️')
+      .setEmoji('<:dc992fea7ae84f43b24df2e52282cf6f:1549067424685490186>')
       .setStyle(ButtonStyle.Secondary)
   );
 
