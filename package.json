@@ -1,0 +1,15 @@
+{
+  "name": "t3-registration-bot",
+  "version": "1.0.0",
+  "description": "Standalone Discord bot for T3 Scrims team registration",
+  "main": "index.js",
+  "type": "commonjs",
+  "scripts": {
+    "deploy": "node deploy-commands.js",
+    "start": "node index.js"
+  },
+  "dependencies": {
+    "discord.js": "^14.14.1",
+    "dotenv": "^16.4.5"
+  }
+}
