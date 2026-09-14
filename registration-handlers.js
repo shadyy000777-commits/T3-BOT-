@@ -327,7 +327,7 @@ function buildRegisteredLogEmbed(data, teamNumber, ownerId, isEdit) {
     .filter(n => n < 5 || data.p5_ign) // Player 5 is optional — omit the line entirely if not filled in
     .map(n => {
       const key = `p${n}`;
-      return `🔹 \`${data[`${key}_ign`]}\` / ${data[`${key}_uid`]}`;
+      return `<a:452028tick:1547663744979574955> \`${data[`${key}_ign`]}\` / ${data[`${key}_uid`]}`;
     })
     .join('\n');
 
