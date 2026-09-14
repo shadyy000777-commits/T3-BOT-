@@ -334,17 +334,17 @@ function buildRegisteredLogEmbed(data, teamNumber, ownerId, isEdit) {
   const lineupLine = (data.selectedPlayerIds || []).map(id => `<@${id}>`).join(' ') || '_not selected_';
 
   return new EmbedBuilder()
-    .setTitle(isEdit ? '🔄 T3 REGISTRATION UPDATED' : '✅ T3 REGISTRATION — Team Confirmed')
+    .setTitle(isEdit ? '🔄 T3 REGISTRATION UPDATED' : '<:4321bgmi:1547674231498612837> T3 REGISTRATION — Team Confirmed')
     .setColor(isEdit ? 0x5865F2 : 0xF5A623)
     .setDescription(
-      `🏳️ ${teamNumber} : **TEAM ${data.team_name}**\n` +
-      `👑 Owner - <@${ownerId}>\n` +
-      `📍 City - ${data.city}\n` +
+      `<:4321bgmi:1547674231498612837> ${teamNumber} : **TEAM ${data.team_name}**\n` +
+      `<:591324redneonownercrown:1547675533649645678> Owner - <@${ownerId}>\n` +
+      `<a:836435400498741289:1547663764466180220> City - ${data.city}\n` +
       (data.group ? `🎮 ${groupDisplayName(data.group)} — Slot ${localSlotNumber(data.slotNumber)}\n\n` : '\n') +
-      `🧑‍🤝‍🧑 **Players (IGN/UID)**\n${playerLines}\n\n` +
-      `📱 WhatsApp: ${data.whatsapp}\n` +
-      `✉️ ${data.owner_email}\n\n` +
-      `👥 **Playing Lineup -** ${lineupLine}`
+      `<a:1037776333327052890:1547681613901471836> **Players (IGN/UID)**\n${playerLines}\n\n` +
+      `<:7578whatsapp:1547663758296621126> WhatsApp: ${data.whatsapp}\n` +
+      `<:919881goldmail:1547663770904567808> ${data.owner_email}\n\n` +
+      `<a:450144discord:1547663739443220541> **Playing Lineup -** ${lineupLine}`
     )
     .setFooter({
       text: isEdit
